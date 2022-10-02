@@ -1,0 +1,46 @@
+/*Telegram*/
+.telegram__register {
+    display: flex;
+    align-items: flex-end;
+}
+
+.telegram__form {
+    width: 358px;
+    height: 50px;
+    color: var(--light-txt-cl);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: var(--second-bg-cl);
+    padding-left: 16px;
+
+    &::placeholder {
+            padding-top: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(20/16);
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.telegram__mail {
+    display: block;
+    margin-right: 12px;
+}
+
+.telegram__name {
+    display: block;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+}

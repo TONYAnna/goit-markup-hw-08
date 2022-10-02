@@ -1,0 +1,25 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--logo-cl);
+    margin-right: 93px;
+}
+
+.logo__studio {
+    color: #000000
+}
+
+.address__logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--logo-cl);
+    margin-bottom: 20px;
+    display: block;
+}

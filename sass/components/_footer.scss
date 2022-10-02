@@ -1,0 +1,13 @@
+/*Footer*/
+
+.footer {
+    background-color: var(--second-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}

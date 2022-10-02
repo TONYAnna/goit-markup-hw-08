@@ -1,0 +1,67 @@
+/*Telegram Btn*/
+
+.telegram__btn {
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-txt-cl);
+    cursor: pointer;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    border: 0px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-bg-cl);
+        }
+}
+
+.telegram__icon {
+    margin-left: 10px;
+}
+
+/*Modal Btn*/
+
+.modal__submit-btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-txt-cl);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-bg-cl);
+        }
+}

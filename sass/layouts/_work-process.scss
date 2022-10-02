@@ -1,0 +1,39 @@
+/*Work-Process*/
+.work-process__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl)
+}
+
+.work-process__list {
+    gap: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.work-process__thumb {
+    position: relative;
+}
+
+.work-process__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    width: 370px;
+
+    position: absolute;
+    bottom: 0px;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
