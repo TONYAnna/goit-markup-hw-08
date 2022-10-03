@@ -32,16 +32,16 @@
 }
 
 .features__item {
-    width: 450px;
+    max-width: 450px;
 
         //tablet styles
             @media screen and (min-width: 768px) {
-                width: 354px;
+                max-width: 354px;
             }
 
                     //desktop styles
                         @media screen and (min-width: 1200px) {
-                            width: 270px;
+                            max-width: 270px;
                         }
 }
 
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: var(--bgcl-icon-cl);
     border-radius: 4px;
@@ -57,12 +57,12 @@
 
             //tablet styles
                 @media screen and (min-width: 768px) {
-                    width: 354px;
+                    max-width: 354px;
                 }
             
                 //desktop styles
                 @media screen and (min-width: 1200px) {
-                    width: 270px;
+                    max-width: 270px;
                 }
 }
 
