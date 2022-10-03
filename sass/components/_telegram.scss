@@ -1,11 +1,30 @@
 /*Telegram*/
+.telegram {
+    //tablet styles
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin: 0px auto;
+    }
+
+                                        //desktop styles
+                                        @media screen and (min-width: 1200px) {
+                                        display: flex;
+                                        }
+}
 .telegram__register {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+
+                //desktop styles
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                }
 }
 
 .telegram__form {
-    width: 358px;
+    width: 450px;
     height: 50px;
     color: var(--light-txt-cl);
 
@@ -14,6 +33,7 @@
     border-radius: 4px;
     background: var(--second-bg-cl);
     padding-left: 16px;
+    margin-bottom: 20px;
 
     &::placeholder {
             padding-top: 15px;
@@ -26,14 +46,25 @@
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
         }
+
+                                                        //desktop styles
+                                                        @media screen and (min-width: 1200px) {
+                                                            margin-bottom: 0;
+                                                                width: 358px;
+                                                        }
 }
 
 .telegram__mail {
     display: block;
-    margin-right: 12px;
+
+                    //desktop styles
+                        @media screen and (min-width: 1200px) {
+                        margin-right: 12px;
+                        }
 }
 
 .telegram__name {
+    text-align: center;
     display: block;
     margin-bottom: 20px;
     font-style: normal;
@@ -43,4 +74,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
+
+                    //desktop styles
+                        @media screen and (min-width: 1200px) {
+                        text-align: left;
+                        }
 }

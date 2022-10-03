@@ -1,7 +1,19 @@
 /*Address*/
 
 .address {
-    color: var(--light-txt-cl)
+    color: var(--light-txt-cl);
+    text-align: center;
+    margin-bottom: 60px;
+
+            //tablet styles
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 96px;
+                }
+            
+                //desktop styles
+                @media screen and (min-width: 1200px) {
+                    margin-bottom: 0;
+                }
 }
 
 .address__studio {
@@ -17,10 +29,20 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+
+    &:not(:first-child) {
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
+    }
 }
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.address__link {
+    display: block;
 }
 
 .address__mail{

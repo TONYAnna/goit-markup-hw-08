@@ -1,18 +1,23 @@
 /*Join*/
+.join {
+    margin-bottom: 60px;
+
+                    //desktop styles
+                    @media screen and (min-width: 1200px) {
+                            margin-bottom: 0;
+                    }
+}
 
 .join__name {
-    width: 116px;
-    height: 16px;
-    left: 516px;
-    top: 2748px;
     color: var(--light-txt-cl);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .join__list {

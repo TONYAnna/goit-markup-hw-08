@@ -1,12 +1,21 @@
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
+    font-size: 24px;
+    line-height: calc(28/24);
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--logo-cl);
-    margin-right: 93px;
+    padding: 16px 0;
+
+
+        //desktop styles
+            @media screen and (min-width: 1200px) {
+                font-size: 26px;
+                line-height: calc(31/26);
+                    margin-right: 93px;
+                    padding: 0;
+            }
 }
 
 .logo__studio {

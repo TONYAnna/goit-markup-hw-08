@@ -1,4 +1,10 @@
 /*Work-Process*/
+
+.work-process {
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
 .work-process__title {
     margin-bottom: 50px;
     font-weight: 700;
