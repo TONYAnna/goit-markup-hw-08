@@ -18,16 +18,15 @@
 </head>
 
 <body class="page">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="nav">
                 <a class="logo" href="./index.html">
                     Web<span class="logo__studio">Studio</span>
                 </a>
-    
                 <ul class="list nav__list">
                     <li class="nav__item"><a class="link nav__link" href="./index.html">Студія</a></li>
-                    <li class="nav__item"><a class="link nav__link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav__item"><a class="link current nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
                 </ul>
             </nav>
@@ -48,8 +47,13 @@
                     </li>
                 </ul>
             </div>
+            <button type="button" class="menu__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#open-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+    </header>
 
     <main class="main-p">
         <section class="section">
@@ -183,11 +187,12 @@
                 <a class="address__logo" href="./index.html">Web<span class="address__studio">Studio</span></a>
                 <address class="address__contacts">
                     <ul class="address__list">
-                        <li class="address__item"><a class="link" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li class="address__item"><a class="link address__mail"
+                        <li class="address__item"><a class="link address__link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="address__item"><a class="link address__mail address__link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="address__item"><a class="link address__tel" href="tel:+380961111111">+38 096 111 11
-                                11</a></li>
+                        <li class="address__item"><a class="link address__tel address__link" href="tel:+380961111111">+38
+                                096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -235,6 +240,42 @@
             </div>
         </div>
     </footer>
+
+        <!--modal menu-->
+        <div class="menu__container js-menu-container" id="mobile-menu">
+            <button class="menu__toggle js-close-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#close-menu"></use>
+                </svg>
+            </button>
+        
+            <ul class="menu__list-nav">
+                <li class="menu__item"><a class="link menu__link" href="./index.html">Студія</a></li>
+                <li class="menu__item"><a class="link current menu__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="menu__item"><a class="link menu__link" href="">Контакти</a></li>
+            </ul>
+        
+            <ul class="menu__list-contacts">
+                <li class="menu__item"><a class="link  menu__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="menu__item"><a class="link menu__contacts-link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        
+            <ul class="menu__list-socials">
+                <li class="menu__item-socials"><a href="" class="link menu__socials-link">Instagram</a></li>
+                <li class="menu__item-socials"><a href="" class="link menu__socials-link">Twitter</a></li>
+                <li class="menu__item-socials"><a href="" class="link menu__socials-link">Facebook</a></li>
+                <li class="menu__item-socials"><a href="" class="link menu__socials-link">LinkedIn</a></li>
+            </ul>
+        </div>
+        
+        <script src="./js/modal.js"></script>
+        
+        <!--mobil menu-->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
