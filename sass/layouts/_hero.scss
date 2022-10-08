@@ -50,7 +50,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
-    max-width: 360px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
@@ -62,4 +61,8 @@
                 font-size: 44px;
                 line-height: calc(60/44);
                 }
+
+                                @media screen and (min-width: 768px) {
+                                max-width: 360px;
+                                }
 }

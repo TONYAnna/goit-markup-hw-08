@@ -5,6 +5,11 @@
         margin: 0px auto;
     }
 
+         //tablet styles
+        @media screen and (max-width:767px) {
+            width: 100%;
+        }
+
                                         //desktop styles
                                         @media screen and (min-width: 1200px) {
                                         display: flex;
@@ -46,9 +51,15 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
+                &:focus {
+                    border-color: var(--accent-txt-cl);
+                    outline: none;
+                }
+
                         //tablet styles
                         @media screen and (max-width:767px) {
                             max-width: 450px;
+                                width: 100%;
                         }
 
                                                                                                 @media screen and (min-width:768px) {
@@ -64,6 +75,11 @@
 
 .telegram__mail {
     display: block;
+
+    @media screen and (max-width:767px) {
+            max-width: 450px;
+                width: 100%;
+        }
 
                     //desktop styles
                         @media screen and (min-width: 1200px) {

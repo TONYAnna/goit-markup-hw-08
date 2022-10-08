@@ -16,11 +16,6 @@
     gap: 30px;
     justify-content: center;
 
-        //tablet styles
-            @media screen and (min-width: 768px) {
-            
-            }
-        
             //desktop styles
             @media screen and (min-width: 1200px) {
                 display: flex;
@@ -31,11 +26,16 @@
             }
 }
 
+.customers__item {
+    @media screen and (max-width: 767px) {
+            width: calc((100% - 30px)/2);
+        }
+}
+
 .customers__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
     height: 92px;
     border: 1px solid var(--main-icon-cl);
     border-radius: 4px;

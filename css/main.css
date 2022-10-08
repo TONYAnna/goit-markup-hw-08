@@ -496,6 +496,11 @@ ul {
     margin: 0px auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .telegram {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .telegram {
     display: -webkit-box;
@@ -607,9 +612,14 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.telegram__form:focus {
+  border-color: var(--accent-txt-cl);
+  outline: none;
+}
 @media screen and (max-width: 767px) {
   .telegram__form {
     max-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -626,6 +636,12 @@ ul {
 
 .telegram__mail {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .telegram__mail {
+    max-width: 450px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .telegram__mail {
@@ -1292,7 +1308,6 @@ textarea::placeholder {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
-  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -1303,6 +1318,11 @@ textarea::placeholder {
     height: 120px;
     font-size: 44px;
     line-height: 1.3636363636;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
   }
 }
 
@@ -1619,6 +1639,12 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .customers__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,7 +1655,6 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   border: 1px solid var(--main-icon-cl);
   border-radius: 4px;
