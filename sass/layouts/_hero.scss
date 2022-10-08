@@ -62,7 +62,7 @@
                 line-height: calc(60/44);
                 }
 
-                                @media screen and (min-width: 768px) {
+                                @media screen and (min-width: 768px) and (max-width: 1199px) {
                                 max-width: 360px;
                                 }
 }
