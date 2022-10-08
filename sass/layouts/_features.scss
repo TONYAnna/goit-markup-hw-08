@@ -14,7 +14,6 @@
 }
 
 .features__list {
-
     display: block;
 
     //tablet styles
@@ -32,6 +31,10 @@
 }
 
 .features__item {
+    &:not( :last-child) {
+            margin-bottom: 30px;
+        }
+        
     max-width: 450px;
 
         //tablet styles

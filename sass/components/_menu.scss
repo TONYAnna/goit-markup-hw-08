@@ -14,7 +14,7 @@
 
                 @media screen and (max-width: 767px) {
                     position: absolute;
-                    right: 23px;
+                    right: 15px;
                     top: 50%;
                     transform: translateY(-50%);
                     }
@@ -51,8 +51,8 @@
             justify-content: center;
             margin-left: auto;
             position: absolute;
-            top: 21px;
-            right: 25px;
+            top: 10px;
+            right: 15px;
             padding: 0;
         
             width: 40px;
@@ -99,6 +99,10 @@
     &:focus {
         color: var(--accent-txt-cl);
     }
+
+        @media screen and (min-width: 320px) and (max-width: 479px) {
+            font-size: 28px;
+        }
 }
 
 .menu__list-socials {

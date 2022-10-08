@@ -41,4 +41,11 @@
     color: var(--logo-cl);
     margin-bottom: 20px;
     display: block;
+
+    //tablet styles
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+                line-height: calc(28 / 24);
+        }
 }
+
