@@ -7,6 +7,10 @@
     padding-inline-start: 0px;
 }
 
+.variation__item {
+    display: flex;
+}
+
 .variation__link {
     display: block;
 
@@ -23,6 +27,12 @@
     &:focus .variation__text-thumb {
                     transform: translatex(0);
                 }
+
+                                @media screen and (min-width:768px) and (max-width:1199px) {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
 }
 
 .variation__thumb {
@@ -51,6 +61,11 @@
 .variation__border {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 354px;
+        flex-grow: 1;
+        }
 }
 
 .variation__title {
