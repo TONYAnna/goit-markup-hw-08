@@ -1219,7 +1219,7 @@ textarea::placeholder {
   margin-bottom: 64px;
 }
 
-.menu__contacts-link {
+.menu__contacts-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -1232,11 +1232,33 @@ textarea::placeholder {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu__contacts-link:hover, .menu__contacts-link:focus {
+.menu__contacts-tel:hover, .menu__contacts-tel:focus {
   color: var(--accent-txt-cl);
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .menu__contacts-link {
+  .menu__contacts-tel {
+    font-size: 28px;
+  }
+}
+
+.menu__contacts-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--txt-cl);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__contacts-mail:hover, .menu__contacts-mail:focus {
+  color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .menu__contacts-mail {
     font-size: 28px;
   }
 }

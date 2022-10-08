@@ -84,7 +84,7 @@
     margin-bottom: 64px;
 }
 
-.menu__contacts-link {
+.menu__contacts-tel {
     font-weight: 500;
     font-size: 34px;
     line-height: calc(40 / 34);
@@ -104,6 +104,29 @@
             font-size: 28px;
         }
 }
+
+.menu__contacts-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--txt-cl);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        font-size: 28px;
+    }
+}
+
+
 
 .menu__list-socials {
     display: flex;
